@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Certified Educator Level 1 • Axmadaliyeva Dilnozaxon Rafikjanovna • Google for Education</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="{% static 'accredible_credential_net_logo.svg'%}" alt="Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <div class="menu-items">
+                <a href="#" class="menu-item">
+                    <i class="fas fa-user"></i> Sign in
+                </a>
+            </div>
+        </div>
+    </header>
+    <br><br>
+    <div class="container">
+        <div class="display-section">
+            <img src="{% static 'certificate.jpg'%}" alt="Selected Image" id="displayedImage">
+        </div>
+        <div class="thumbnail-section">
+            <img src="{% static 'certificate.jpg'%}" alt="Top Image" class="thumbnail" onclick="showImage('{% static 'certificate.jpg'%}')">
+            <img src="{% static 'GCE_Badges_02-1024x214.webp'%}" alt="Bottom Image" class="thumbnail"
+                onclick="showImage('{% static 'GCE_Badges_02-1024x214.webp'%}')">
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="header2">
+           <a href="#"><img src="{% static 'icon.jpg'%}" alt="Google" class="logo2"></a>
+        </div>
+        <p class="subtitle">Google Certified Educator Level 2</p>
+        <div class="buttons">
+            <div class="dropdown">
+                <button class="dropdown-btn" style="border: 1px solid grey;">Options ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">More Information</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" style="border: 1px solid grey;">Download ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Download Certificate PDF</a>
+                    <a href="#">Download Certificate Image</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" style="text-decoration: none;"><p class="signin">Sign in to access more options</p></a>
+    </div>
+
+</body>
+
+</html>
