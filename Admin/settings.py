@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', get_random_secret_key())
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.credential.net', 'credential.net']  
+ALLOWED_HOSTS = ['www.credential.net', 'credential.net', '147.45.141.32']  
 
 # Security Settings
 SECURE_SSL_REDIRECT = True
